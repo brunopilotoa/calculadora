@@ -37,7 +37,7 @@ export default function Home() {
 
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-24">
+    <main className="flex min-h-screen flex-col items-center p-20">
       <h1 className="title">Calculadora</h1>
       <div className="p-6 rounded-lg shadow-lg">
         {/* <p>Insira</p> */}
@@ -61,7 +61,7 @@ export default function Home() {
           key={btn}
           onClick={()=>
             handleButtonClick(btn)}
-          className="text-4x1 bg-gray-300 hover:bg-gray-400 p-2 rounded-lg"
+          className=" text-4x1 bg-gray-300 hover:bg-gray-400 p-4 rounded-lg"
         >
         {btn}
         </button>  
