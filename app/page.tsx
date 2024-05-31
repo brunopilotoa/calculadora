@@ -9,7 +9,7 @@ export default function Home() {
   
   const [expression,setExpression] =useState("")
 
-  const handleButtonClick = (value) =>{
+  const handleButtonClick = (value: string) =>{
     if (value === '='){
     
         try{
