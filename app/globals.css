@@ -24,7 +24,9 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+    /* background-color: #000099	; */
+    background-color: #104480;
+  }
 
 @layer utilities {
   .text-balance {
@@ -32,11 +34,9 @@ body {
   }
 }
 
-.number1{
-  color: blue;
+.title{
+  font-size: larger;
+  /* font-family: ;? */
+  
 }
 
-.number2{
-
-  color: cornflowerblue;
-}

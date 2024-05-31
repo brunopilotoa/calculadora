@@ -38,18 +38,19 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
-      <h1 className="text 4x1 font-bold mb-10">Calculadora</h1>
+      <h1 className="title">Calculadora</h1>
       <div className="p-6 rounded-lg shadow-lg">
+        {/* <p>Insira</p> */}
       <input 
         type="text"
-        className=" number 2 w-full mb-2 text-3x1 border-b-2 border-gray-400 focus:outline-none"
+        className=" number2 w-full mb-2 text-3x1 border-b-2 border-gray-400 focus:outline-none"
         value={expression}
         readOnly 
       />
 
       <input 
       type="text"
-      className=" number1 w-full text-4x1  font-bold mb-4 focus:outline-none"
+      className=" number1 w-full text-2x1  font-bold mb-4 focus:outline-none"
       value={result}
       readOnly
       />
