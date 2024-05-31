@@ -1,6 +1,5 @@
 'use client'
 
-import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
@@ -15,7 +14,7 @@ export default function Home() {
         try{
             const evalResult = eval(expression).toString();
             setResult(evalResult)
-            setExpression(evalResult)          
+            // setExpression(evalResult)          
         } catch (error){
           setResult('Error');
         }
@@ -25,7 +24,7 @@ export default function Home() {
       }else{
         setExpression((prevExpression) => prevExpression + value);
     }
-  }
+  };
   
 
   const buttons = [
@@ -39,7 +38,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
-      <h1>Calculadora</h1>
+      <h1 className="text 4x1 font-bold mb-10">Calculadora</h1>
       <div className="p-6 rounded-lg shadow-lg">
       <input 
         type="text"
@@ -47,14 +46,16 @@ export default function Home() {
         value={expression}
         readOnly 
       />
+
       <input 
       type="text"
       className=" number1 w-full text-4x1  font-bold mb-4 focus:outline-none"
       value={result}
       readOnly
       />
+      
       <div className="grid grid-cols-4 gap-2">
-      {buttons.map((btn)=>
+      {buttons.map((btn)=>(
         <button
           key={btn}
           onClick={()=>
@@ -63,10 +64,9 @@ export default function Home() {
         >
         {btn}
         </button>  
-        )}
+        ))}
       </div>
-
-      </div>
-    </main>
-    )
+    </div>
+  </main>
+ )
 }
