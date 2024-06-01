@@ -14,7 +14,6 @@ export default function Home() {
         try{
             const evalResult = eval(expression).toString();
             setResult(evalResult)
-            // setExpression(evalResult)          
         } catch (error){
           setResult('Error');
         }
@@ -43,16 +42,18 @@ export default function Home() {
         {/* <p>Insira</p> */}
       <input 
         type="text"
-        className=" number2 w-full mb-2 text-3x1 border-b-2 border-gray-400 focus:outline-none"
+        className=" number w-full mb-2 text-3x1 border-b-2 border-gray-400 focus:outline-none text-center"
         value={expression}
         readOnly 
+        placeholder="Expressão Matemática"
       />
 
       <input 
       type="text"
-      className=" number1 w-full text-2x1  font-bold mb-4 focus:outline-none"
+      className=" number w-full text-2x1  font-bold mb-4 focus:outline-none align-self text-center"
       value={result}
       readOnly
+      placeholder="Resultado"
       />
       
       <div className="grid grid-cols-4 gap-2">
